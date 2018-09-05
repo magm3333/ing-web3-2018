@@ -3,6 +3,7 @@ package ar.edu.iua.ingweb3.web.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -52,7 +53,9 @@ public class ProductosRESTController {
 		
 		try {
 			productoBusiness.add(producto);
-			return new ResponseEntity<Object>(HttpStatus.CREATED);
+			HttpHeaders responseHeaders = new HttpHeaders();
+			responseHeaders.set("location", "/productos/" + producto.getId());
+			return new ResponseEntity<Object>(responseHeaders,HttpStatus.CREATED);
 		} catch (BusinessException e) {
 			return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
