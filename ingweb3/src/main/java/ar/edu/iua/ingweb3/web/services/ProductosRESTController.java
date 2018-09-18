@@ -27,10 +27,15 @@ public class ProductosRESTController {
 
 	@RequestMapping(value = { "", "/" }, method = RequestMethod.GET, produces = "application/json")
 	public ResponseEntity<List<Producto>> lista(
-			@RequestParam(required = false, value = "q", defaultValue = "*") String q) {
+			@RequestParam(required = false, value = "q", defaultValue = "*") String q,
+			@RequestParam(required = false, value = "precio_desde", defaultValue = "-1") double precioDesde,
+			@RequestParam(required = false, value = "precio_hasta", defaultValue = "-1") double precioHasta) {
 
 		try {
-			if (q.equals("*") || q.trim().length() == 0) {
+			if (precioDesde != -1 && precioHasta != -1 && precioDesde <= precioHasta) {
+				return new ResponseEntity<List<Producto>>(productoBusiness.searchByPrecios(precioDesde, precioHasta),
+						HttpStatus.OK);
+			} else if (q.equals("*") || q.trim().length() == 0) {
 				return new ResponseEntity<List<Producto>>(productoBusiness.getAll(), HttpStatus.OK);
 			} else {
 				return new ResponseEntity<List<Producto>>(productoBusiness.search(q), HttpStatus.OK);
