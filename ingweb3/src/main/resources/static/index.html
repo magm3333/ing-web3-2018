@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="controllers/primero.controller.js"></script>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body ng-app="iw3">
+
+<div ng-controller="primero.controller"> 
+	<input type="text" ng-model="search"/>
+	<ul>
+		<li ng-repeat="p in data | filter : search">
+			{{p.id}} ------  {{p.descripcion}}   -------   {{p.precio}}
+		</li>
+	</ul>
+	
+	<ol>
+		<li ng-repeat="p in data | filter : search">
+			{{p.id}} ------  {{p.descripcion}}   -------   {{p.precio}}
+		</li>
+	</ol>
+</div>
+
+
+<div ng-controller="div1.controller">
+
+	<h3>{{titulo}}</h3>
+	{{opciones}}
+	<br/>
+	<label style="font-size: {{opciones.tamanio}}px; color: {{opciones.color}}">Texto: </label>
+	<input type="number" ng-model="opciones.tamanio"/>
+	<input type="text" ng-model="opciones.color"/>
+</div>
+
+<div ng-controller="div2.controller">
+	{{titulo}}
+</div>
+
+</body>
+</html>

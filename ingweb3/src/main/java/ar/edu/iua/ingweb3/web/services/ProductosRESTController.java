@@ -19,7 +19,7 @@ import ar.edu.iua.ingweb3.model.Producto;
 import ar.edu.iua.ingweb3.model.exception.NotFoundException;
 
 @RestController
-@RequestMapping("/productos")
+@RequestMapping(Constantes.URL_PRODUCTOS)
 public class ProductosRESTController {
 
 	@Autowired
