@@ -1,20 +1,17 @@
-//setter
-angular.module('iw3',[]);
+
+var app=angular.module('iw3',['ngRoute']);
+
+app.constant('URL_BASE','/');
+app.constant('URL_API_BASE','/api/v1/');
 
 
-//getter
-angular.module('iw3').controller('div1.controller',
-	function($scope){
-		$scope.titulo="Hola desde el controller 1";
-		$scope.opciones={color:"black",tamanio:12};
-	}	
-);
 
-
-angular.module('iw3').controller('div2.controller',
-	function($scope){
-		$scope.titulo="Hola desde el controller 2";
-		
-	}	
-);
+app.run(['$location','$log','$rootScope',
+	function($location,$log,$rootScope){
+		$log.log('Iniciando');
+		$rootScope.relocate=function(loc) {
+			$location.path(loc);
+		};
+	}
+]);
 

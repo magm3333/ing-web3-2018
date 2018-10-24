@@ -58,14 +58,14 @@ public class ProductosRESTController {
 	}
 
 	@RequestMapping(value = { "", "/" }, method = RequestMethod.POST, produces = "application/json")
-	public ResponseEntity<Object> add(@RequestBody Producto producto) {
+	public ResponseEntity<Producto> add(@RequestBody Producto producto) {
 		try {
-			productoBusiness.add(producto);
+			Producto p=productoBusiness.add(producto);
 			HttpHeaders responseHeaders = new HttpHeaders();
 			responseHeaders.set("location", "/productos/" + producto.getId());
-			return new ResponseEntity<Object>(responseHeaders, HttpStatus.CREATED);
+			return new ResponseEntity<Producto>(p,responseHeaders, HttpStatus.CREATED);
 		} catch (BusinessException e) {
-			return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<Producto>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
 	}
