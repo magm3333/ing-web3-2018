@@ -2,26 +2,38 @@
 
 <button class="btn btn-success" ng-click="relocate('/')">Volver</button>
 <i ng-click="refresh()" class="fas fa-sync-alt"></i>
+<div class="row">
+	<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2><i class="fas fa-plus"></i> Nuevo</h2></div>
+			<div class="panel-body">
+				<form>
+					<div class="form-group">
+						<label for="descripcion">Descripción:</label> 
+						<input id="descripcion" class="form-control" type="text" ng-model="instancia.descripcion" />
+						<label for="precio">Precio:</label>  
+						<input id="precio" class="form-control" type="number" ng-model="instancia.precio" /><br />
+					</div>
+				</form>
+			</div>
+			<div class="panel-footer text-right" >
+				<button  ng-disabled="!mostrarBotonGuardar()" class="btn btn-primary"
+					ng-click="agregar()">Guardar</button>
+			</div>
 
-<div class="panel panel-default">
-<div class="panel-heading">Nuevo</div>
-  <div class="panel-body">
-   Descripción: <input type="text" ng-model="instancia.descripcion"/><br/>
-   Precio: <input type="number" ng-model="instancia.precio"/><br/>
-  </div>
-  <div class="panel-footer">
-  	<button ng-show="mostrarBotonGuardar()" class="btn btn-primary" ng-click="agregar()">Guardar</button>
-  </div>
+		</div>
+	</div>
 </div>
-
-<ul>
-	<li ng-repeat="p in data">
-	
-	{{p.id}} - <span ng-hide="p.id==instanciaM.id">{{p.descripcion}} - {{p.precio}} - 
-	<i ng-click="borrar(p.id)" class="fas fa-trash-alt"></i>
-	<i ng-click="startEdit(p)" class="fas fa-edit"></i></span>
-	<span ng-show="p.id==instanciaM.id">
-	<input type="text" ng-model="instanciaM.descripcion"/> - <input type="number" ng-model="instanciaM.precio"/>
-	</span>
-	</li>
-</ul>
+<div class="row">
+	<ul>
+		<li ng-repeat="p in data">{{p.id}} - <span
+			ng-hide="p.id==instanciaM.id">{{p.descripcion}} - {{p.precio}}
+				- <i ng-click="borrar(p.id)" class="fas fa-trash-alt"></i> <i
+				ng-click="startEdit(p)" class="fas fa-edit"></i>
+		</span> <span ng-show="p.id==instanciaM.id"> <input type="text"
+				ng-model="instanciaM.descripcion" /> - <input type="number"
+				ng-model="instanciaM.precio" />
+		</span>
+		</li>
+	</ul>
+</div>

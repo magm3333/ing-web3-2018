@@ -51,11 +51,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		String[] resources = recursosEstaticos.split(",");
 
 		http.authorizeRequests().antMatchers(resources).permitAll().anyRequest().authenticated();
+		http.authorizeRequests().antMatchers("/login").permitAll().antMatchers("/dologin").permitAll().anyRequest()
+				.authenticated();
 
-		http.formLogin()
-				// .loginPage(Constantes.URL_DENY)
-				.defaultSuccessUrl(Constantes.URL_PRODUCTOS).loginProcessingUrl("/dologin").permitAll()
-				.failureForwardUrl(Constantes.URL_DENY);
+		http.formLogin().loginPage(Constantes.URL_DENY).defaultSuccessUrl(Constantes.URL_LOGINOK)
+				.loginProcessingUrl("/dologin").permitAll().failureForwardUrl(Constantes.URL_DENY);
 
 		http.logout().logoutSuccessUrl(Constantes.URL_LOGOUTOK).deleteCookies("JSESSIONID", "rmiw3")
 				.clearAuthentication(true);

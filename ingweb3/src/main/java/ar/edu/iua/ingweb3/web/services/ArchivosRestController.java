@@ -32,7 +32,7 @@ import ar.edu.iua.ingweb3.model.exception.NotFoundException;
 
 @RestController
 @RequestMapping(Constantes.URL_ARCHIVOS)
-public class ArchivosRESTController {
+public class ArchivosRestController {
 
 	private Logger log = LoggerFactory.getLogger(this.getClass());
 

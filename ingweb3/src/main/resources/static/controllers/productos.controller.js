@@ -1,5 +1,5 @@
 angular.module('iw3')
-.controller('ProductosController', function($scope,$http,$log,productosService){
+.controller('ProductosController', function($scope,$http,$log,productosService,$rootScope){
 	$scope.titulo="Productos";	
 	$scope.data=[];
 	$scope.instancia={};
@@ -51,6 +51,5 @@ angular.module('iw3')
 		return i.descripcion &&  i.descripcion.length>0 && i.precio && i.precio>0;
 	};
 	
-	
-	$scope.refresh();
+	$rootScope.authInfo($scope.refresh);
 });
