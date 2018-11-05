@@ -11,6 +11,8 @@ public final class Constantes {
 	public static final String URL_DENY="/deny";
 	public static final String URL_LOGOUTOK="/logoutok";
 	
+	public static final String URL_TEST="/test";
+	
 	public static final String URL_LOGINOK = "/loginok";
 	public static final String URL_AUTH_INFO =  "/authinfo";
 }
