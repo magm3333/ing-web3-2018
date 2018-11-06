@@ -2,6 +2,8 @@
 
 <button class="btn btn-success" ng-click="relocate('/')">Volver</button>
 <i ng-click="refresh()" class="fas fa-sync-alt"></i>
+
+<button  class="btn btn-primary" ng-click="nuevoModal()">Nuevo</button>
 <div class="row">
 	<div class="col-md-4">
 		<div class="panel panel-default">
@@ -23,6 +25,15 @@
 
 		</div>
 	</div>
+</div>
+<div class="row" style="padding: 20px">
+<ad-table-lite table-name="miTabla" enable-column-search="true"
+				column-definition="tableColumnDefinition" local-data-source="data"
+					page-size="5" page-sizes="[2,5,10,15,20]" pagination-btn-group-classes="pagination pagination-sm"
+					table-classes="table table-bordered" items-not-found-message="No hay nada"
+					snug-sort-icons="true" search-text="tableConfig.searchTable"
+					state="tableConfig.state" loading-icon-class="glyphicon glyphicon-plus ad-spin">
+			</ad-table-lite>
 </div>
 <div class="row">
 	<ul>

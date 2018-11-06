@@ -7,18 +7,21 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import ar.edu.iua.ingweb3.model.User;
+
 public class BaseRestController {
 
-	protected UserDetails getUserPrincipal() {
+	protected User getUserPrincipal() {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		UserDetails user = (UserDetails) auth.getPrincipal();
+		User user = (User) auth.getPrincipal();
 		return user;
 	}
 
 	@SuppressWarnings("unchecked")
-	protected JSONObject userToJson(UserDetails u) {
+	protected JSONObject userToJson(User u) {
 		JSONObject o = new JSONObject();
-		o.put("username", u.getUsername());
+		o.put("username", u.getUsername());		
+		o.put("name", u.getName());
 		o.put("code", 0);
 		JSONArray r = new JSONArray();
 		for (GrantedAuthority g : u.getAuthorities()) {
@@ -28,10 +31,4 @@ public class BaseRestController {
 		return o;
 	}
 
-	@SuppressWarnings("unchecked")
-	protected JSONObject userToJsonMasToken(UserDetails u, String token) {
-		JSONObject r = userToJson(u);
-		r.put("token", token);
-		return r;
-	}
 }

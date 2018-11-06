@@ -55,7 +55,8 @@ public class User implements UserDetails {
 	@Transient
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		List<GrantedAuthority> authorities = getRoles().stream().map(role -> new SimpleGrantedAuthority(role.getName()))
+		List<GrantedAuthority> authorities = getRoles().stream()
+				.map(role -> new SimpleGrantedAuthority(role.getName()))
 				.collect(Collectors.toList());
 		return authorities;
 	}

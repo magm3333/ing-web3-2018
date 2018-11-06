@@ -15,11 +15,11 @@ angular.module('iw3',
 			$rootScope.cleanLoginData = function() {
 				$rootScope.autenticado = false;
 				$rootScope.user = {
+					fullName: "",
 					name : "",
 					password : "",
 					roles : []
 				};
-				$rootScope.user.roles = [];
 			};
 					
 			$rootScope.cleanLoginData();
@@ -54,6 +54,7 @@ angular.module('iw3',
 				if(cb) $rootScope.cbauth=cb;
 				coreService.authInfo().then(function(resp){
 					if(resp.status===200) {
+						$rootScope.user.fullName=resp.data.name;
 						$rootScope.user.name=resp.data.username;
 						$rootScope.user.roles = resp.data.roles;
 						$rootScope.autenticado=true;

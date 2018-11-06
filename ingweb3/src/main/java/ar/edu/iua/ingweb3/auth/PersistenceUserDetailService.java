@@ -20,7 +20,7 @@ public class PersistenceUserDetailService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		List<User> r = usuarioDAO.findByUsername(username);
+		List<User> r = usuarioDAO.findByUsernameOrEmail(username, username);
 		if (r.size() == 0)
 			throw new UsernameNotFoundException("No se encuentra " + username);
 		return r.get(0);

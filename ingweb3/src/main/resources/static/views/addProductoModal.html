@@ -1,0 +1,24 @@
+
+<div class="modal-header">
+	<h3 class="modal-title">Nuevo Producto</h3>
+</div>
+<div class="modal-body">
+
+	<form>
+		<div class="form-group">
+			<label for="descripcion">Descripción:</label> <input id="descripcion"
+				class="form-control" type="text"
+				ng-model="$ctrl.instancia.descripcion" /> <label for="precio">Precio:</label>
+			<input id="precio" class="form-control" type="number"
+				ng-model="$ctrl.instancia.precio" /><br />
+		</div>
+	</form>
+
+</div>
+<div class="modal-footer">
+	<button class="btn btn-primary" type="submit"
+		ng-click="$ctrl.cancelar()">Cancelar</button>
+	<button ng-disabled="!$ctrl.mostrarBotonGuardar()"  class="btn btn-success" 
+		type="submit" ng-click="$ctrl.ok()">Aceptar</button>
+</div>
+

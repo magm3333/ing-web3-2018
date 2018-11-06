@@ -10,6 +10,6 @@ import ar.edu.iua.ingweb3.model.User;
 @Repository
 public interface UsuariosRespository extends JpaRepository<User, Long> {
 
-	public List<User> findByUsername(String username);
+	public List<User> findByUsernameOrEmail(String username,String email);
 
 }
