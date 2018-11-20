@@ -1,5 +1,12 @@
-<h1>{{titulo}}</h1>
+<h3>{{titulo}}</h3>
 <hr/>
 <ul>
 	<li><a ng-click="relocate('productos')">Productos</a></li>
 </ul>
+<hr/>
+<button ng-click="requestRefresh()" class="btn btn-success">Request Refresh</button>
+<canvas id="grafico1" class="chart-horizontal-bar"
+	chart-options="graphOptions.demo.options"
+	chart-data="graphOptions.demo.data.data"
+	chart-labels="graphOptions.demo.data.labels" height="180px" width="600px">
+</canvas>

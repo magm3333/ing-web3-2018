@@ -1,80 +1,581 @@
-06-11-2018 15:33:54.753 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 22113 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
-06-11-2018 15:33:54.783 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
-06-11-2018 15:33:54.806 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-06-11-2018 15:34:11.128 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
-06-11-2018 15:34:12.914 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-06-11-2018 15:34:18.448 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 25.185 seconds (JVM running for 26.456)
-06-11-2018 15:34:18.458 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$b0cf310c.run - DataSource actual= HikariDataSource (HikariPool-1)
-06-11-2018 15:34:18.698 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$b0cf310c.run - La password 'paswword' codificada es: $2a$10$nyt/IuR07gIP9tSPzGtQaOPq/ifnyPW6IK8nuuKFxPQ1I2GU/tVra
-06-11-2018 15:35:09.908 [http-nio-8080-exec-7] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username=:param0, time: 230ms, rows: 1
-06-11-2018 15:35:10.302 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported - Request method 'POST' not supported
-06-11-2018 15:35:10.314 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
-06-11-2018 15:35:12.854 [http-nio-8080-exec-10] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username=:param0, time: 18ms, rows: 1
-06-11-2018 15:35:13.043 [http-nio-8080-exec-10] WARN  o.s.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported - Request method 'POST' not supported
-06-11-2018 15:35:13.044 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
-06-11-2018 15:35:21.981 [http-nio-8080-exec-3] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username=:param0, time: 13ms, rows: 1
-06-11-2018 15:35:31.067 [http-nio-8080-exec-3] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 41ms, rows: 6
-06-11-2018 15:35:57.543 [http-nio-8080-exec-3] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username=:param0, time: 8ms, rows: 1
-06-11-2018 15:35:57.766 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 28ms, rows: 6
-06-11-2018 15:36:09.300 [http-nio-8080-exec-2] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 10ms, rows: 6
-06-11-2018 15:36:10.742 [http-nio-8080-exec-1] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 13ms, rows: 6
-06-11-2018 15:36:12.198 [http-nio-8080-exec-10] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 9ms, rows: 6
-06-11-2018 15:36:12.939 [http-nio-8080-exec-3] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 8ms, rows: 6
-06-11-2018 15:36:13.584 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 8ms, rows: 6
-06-11-2018 15:44:49.516 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 22113 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
-06-11-2018 15:44:49.520 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
-06-11-2018 15:44:49.521 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-06-11-2018 15:44:54.784 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
-06-11-2018 15:44:55.341 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-06-11-2018 15:46:13.599 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 22722 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
-06-11-2018 15:46:13.604 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
-06-11-2018 15:46:13.629 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-06-11-2018 15:46:33.010 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
-06-11-2018 15:46:35.885 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-06-11-2018 15:46:44.429 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 32.532 seconds (JVM running for 34.245)
-06-11-2018 15:46:44.446 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5eb5702a.run - DataSource actual= HikariDataSource (HikariPool-1)
-06-11-2018 15:46:44.933 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5eb5702a.run - La password 'paswword' codificada es: $2a$10$Z0PigD1GOXmZv9S.tK6mxer9X6bsRXwYaKvfGrUChvq4O62BsHTqi
-06-11-2018 15:46:46.255 [http-nio-8080-exec-1] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 146ms, rows: 1
-06-11-2018 15:47:12.664 [http-nio-8080-exec-1] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 12ms, rows: 1
-06-11-2018 15:47:26.083 [http-nio-8080-exec-6] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 26ms, rows: 1
-06-11-2018 15:52:30.013 [http-nio-8080-exec-9] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 14ms, rows: 1
-06-11-2018 15:54:32.010 [http-nio-8080-exec-8] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 8ms, rows: 1
-06-11-2018 15:57:03.165 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 22722 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
-06-11-2018 15:57:03.166 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
-06-11-2018 15:57:03.167 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-06-11-2018 15:57:06.686 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
-06-11-2018 15:57:07.087 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-06-11-2018 15:57:08.506 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 5.425 seconds (JVM running for 658.322)
-06-11-2018 15:57:08.513 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5eb5702a.run - DataSource actual= HikariDataSource (HikariPool-2)
-06-11-2018 15:57:08.688 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5eb5702a.run - La password 'paswword' codificada es: $2a$10$wjcSmETyA129Ol6qw53BWukT87NJRGZT9MDX/PS7F9bcxDz9qWU0u
-06-11-2018 16:04:36.340 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 22722 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
-06-11-2018 16:04:36.341 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
-06-11-2018 16:04:36.342 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-06-11-2018 16:04:39.336 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
-06-11-2018 16:04:39.703 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-06-11-2018 16:04:40.988 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 4.762 seconds (JVM running for 1110.804)
-06-11-2018 16:04:40.994 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5eb5702a.run - DataSource actual= HikariDataSource (HikariPool-3)
-06-11-2018 16:04:41.180 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5eb5702a.run - La password 'paswword' codificada es: $2a$10$10NwA4FV3qWYcn7lf4uPBu2wHT4F6aVJtAw1fpwLKSvjEvDS1hp5O
-06-11-2018 16:04:58.285 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 6ms, rows: 1
-06-11-2018 16:04:58.450 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported - Request method 'POST' not supported
-06-11-2018 16:04:58.451 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
-06-11-2018 16:05:06.922 [http-nio-8080-exec-6] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 6ms, rows: 1
-06-11-2018 16:58:26.500 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 26608 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
-06-11-2018 16:58:26.518 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
-06-11-2018 16:58:26.534 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-06-11-2018 16:58:39.990 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
-06-11-2018 16:58:41.787 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-06-11-2018 16:58:46.660 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 21.57 seconds (JVM running for 23.139)
-06-11-2018 16:58:46.675 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$3743557.run - DataSource actual= HikariDataSource (HikariPool-1)
-06-11-2018 16:58:47.044 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$3743557.run - La password 'paswword' codificada es: $2a$10$69rO3L9MkYpWi5BKK9yBlOYc.ligBYwTTy4hVn1Brzrie9gEvPNZW
-06-11-2018 17:04:03.518 [http-nio-8080-exec-9] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 181ms, rows: 1
-06-11-2018 17:04:05.234 [http-nio-8080-exec-10] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 17ms, rows: 6
-06-11-2018 17:06:05.801 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 15ms, rows: 7
-06-11-2018 17:23:13.055 [http-nio-8080-exec-8] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 18ms, rows: 7
-06-11-2018 17:23:34.639 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 15ms, rows: 7
-06-11-2018 17:24:25.777 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 15ms, rows: 7
-06-11-2018 17:26:42.587 [http-nio-8080-exec-5] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 26ms, rows: 8
-06-11-2018 17:41:30.913 [http-nio-8080-exec-8] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 30ms, rows: 9
-06-11-2018 17:42:11.676 [http-nio-8080-exec-5] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 46ms, rows: 9
-06-11-2018 17:46:31.671 [http-nio-8080-exec-1] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 12ms, rows: 9
-06-11-2018 17:47:37.390 [http-nio-8080-exec-3] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 6ms, rows: 9
+20-11-2018 08:00:42.249 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 8591 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 08:00:42.265 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 08:00:42.274 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 08:00:52.146 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 08:00:53.441 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 08:00:56.094 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 14.366 seconds (JVM running for 15.383)
+20-11-2018 08:00:56.099 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$a26d6cf3.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 08:00:56.323 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$a26d6cf3.run - La password 'paswword' codificada es: $2a$10$Cb/4MyUNkqwZPSte4ZptH.3wTkXRQLLR2KRtEeXU4KLui.wIAKEY.
+20-11-2018 08:00:56.623 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 24ms, rows: 1
+20-11-2018 08:01:22.548 [http-nio-8080-exec-6] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 39ms, rows: 1
+20-11-2018 08:01:32.602 [http-nio-8080-exec-5] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 5ms, rows: 1
+20-11-2018 08:08:45.332 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 8591 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 08:08:45.335 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 08:08:45.336 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 08:08:49.034 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 08:08:49.434 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 08:08:51.214 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 5.987 seconds (JVM running for 490.503)
+20-11-2018 08:08:51.219 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$a26d6cf3.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 08:08:51.482 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$a26d6cf3.run - La password 'paswword' codificada es: $2a$10$pBFrezKVexTYmQM1b8uuT.uRoVKtERFiUC2P/JnM3srZuRRzojryy
+20-11-2018 08:08:51.713 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 08:15:13.041 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 8591 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 08:15:13.046 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 08:15:13.046 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 08:15:17.285 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 08:15:17.630 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 08:20:59.546 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 11590 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 08:20:59.550 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 08:20:59.557 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 08:21:09.454 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 08:21:12.692 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 08:21:16.151 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 17.348 seconds (JVM running for 18.353)
+20-11-2018 08:21:16.157 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9fed85fa.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 08:21:16.347 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9fed85fa.run - La password 'paswword' codificada es: $2a$10$YuXoETmdRpuQbRRC0NSWAOA/g2ofBGJKtYeTrt.lCUa.1NUx4.6hC
+20-11-2018 08:21:16.641 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 26ms, rows: 1
+20-11-2018 08:23:13.362 [http-nio-8080-exec-10] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 92ms, rows: 1
+20-11-2018 08:23:32.086 [http-nio-8080-exec-7] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 6ms, rows: 1
+20-11-2018 08:28:44.791 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 11590 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 08:28:44.800 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 08:28:44.801 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 08:28:50.494 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 08:28:51.126 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 08:28:52.795 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 8.139 seconds (JVM running for 474.997)
+20-11-2018 08:28:52.799 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9fed85fa.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 08:28:53.120 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9fed85fa.run - La password 'paswword' codificada es: $2a$10$2lwUjy10bOxzM8EFZIqOjejr4Z4YeY6DSp6ceRQIAJnnL14DxNZAW
+20-11-2018 08:28:53.268 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 08:30:05.491 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 11590 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 08:30:05.502 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 08:30:05.502 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 08:30:09.455 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 08:30:10.147 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 08:30:11.809 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 6.501 seconds (JVM running for 554.011)
+20-11-2018 08:30:11.813 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9fed85fa.run - DataSource actual= HikariDataSource (HikariPool-3)
+20-11-2018 08:30:11.982 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9fed85fa.run - La password 'paswword' codificada es: $2a$10$ieeuX2ZAGWJZ7IBwSbvPVuA4hSXIyFUdm.mU/hNrUljIwB8IyQvq2
+20-11-2018 08:30:12.101 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 08:30:30.140 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 11590 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 08:30:30.141 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 08:30:30.143 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 08:30:33.928 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 08:30:34.544 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 08:30:36.292 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 6.211 seconds (JVM running for 578.494)
+20-11-2018 08:30:36.297 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9fed85fa.run - DataSource actual= HikariDataSource (HikariPool-4)
+20-11-2018 08:30:36.527 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9fed85fa.run - La password 'paswword' codificada es: $2a$10$UrUOIEozCz.kO.QvMeNDU.7NJVZpyI.0FKGDuBH8nj6b7oyYWz2r.
+20-11-2018 08:30:37.078 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 10:18:46.428 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 17574 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 10:18:46.433 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 10:18:46.444 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 10:19:02.319 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 10:19:07.070 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 10:23:40.270 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 10202 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 10:23:40.277 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 10:23:40.281 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 10:23:50.434 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 10:23:52.432 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 10:23:58.097 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 18.35 seconds (JVM running for 19.33)
+20-11-2018 10:23:58.118 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$578e4a36.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 10:23:58.361 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$578e4a36.run - La password 'paswword' codificada es: $2a$10$hsDzeZu5D3D71/GxoynLQOWXTebJwflBYbrQDR4nUa5CnKojyKbw.
+20-11-2018 10:23:58.816 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 68ms, rows: 1
+20-11-2018 10:24:03.012 [http-nio-8080-exec-5] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 68ms, rows: 1
+20-11-2018 10:25:46.515 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 10202 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 10:25:46.516 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 10:25:46.516 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 10:25:50.225 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 10:25:51.045 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 10:25:52.741 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 6.431 seconds (JVM running for 133.974)
+20-11-2018 10:25:52.745 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$578e4a36.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 10:25:53.026 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$578e4a36.run - La password 'paswword' codificada es: $2a$10$sQI9e62o/h/N97mP9pBbXeuHlr4xtTbRaR1xYZQyjOftHLU2G9ogm
+20-11-2018 10:25:53.165 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 2ms, rows: 1
+20-11-2018 10:26:42.033 [http-nio-8080-exec-6] ERROR o.s.w.s.a.s.StandardWebSocketHandlerAdapter.tryCloseWithError - Closing session due to exception for StandardWebSocketSession[id=3, uri=/api/v1/ws/055/d1azqpjl/websocket]
+org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session d1azqpjl; nested exception is org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session d1azqpjl: Session closed
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.delegateMessages(AbstractSockJsSession.java:391) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.sockjs.transport.session.WebSocketServerSockJsSession.handleMessage(WebSocketServerSockJsSession.java:195) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.sockjs.transport.handler.SockJsWebSocketHandler.handleTextMessage(SockJsWebSocketHandler.java:93) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:42) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:394) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:119) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:495) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:294) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:82) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:171) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:151) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:148) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:54) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session d1azqpjl: Session closed
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.delegateMessages(AbstractSockJsSession.java:383) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	... 25 common frames omitted
+20-11-2018 10:26:42.104 [http-nio-8080-exec-8] ERROR o.s.w.s.a.s.StandardWebSocketHandlerAdapter.tryCloseWithError - Closing session due to exception for StandardWebSocketSession[id=4, uri=/api/v1/ws/812/mvrlyj0n/websocket]
+org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session mvrlyj0n; nested exception is org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session mvrlyj0n: Session closed
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.delegateMessages(AbstractSockJsSession.java:391) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.sockjs.transport.session.WebSocketServerSockJsSession.handleMessage(WebSocketServerSockJsSession.java:195) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.sockjs.transport.handler.SockJsWebSocketHandler.handleTextMessage(SockJsWebSocketHandler.java:93) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:42) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:394) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:119) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:495) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:294) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:82) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:171) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:151) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:148) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:54) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session mvrlyj0n: Session closed
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.delegateMessages(AbstractSockJsSession.java:383) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	... 25 common frames omitted
+20-11-2018 10:26:43.246 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 10202 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 10:26:43.248 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 10:26:43.262 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 10:26:46.404 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 10:26:46.955 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 10:26:48.447 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 5.309 seconds (JVM running for 189.68)
+20-11-2018 10:26:48.471 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$578e4a36.run - DataSource actual= HikariDataSource (HikariPool-3)
+20-11-2018 10:26:48.673 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$578e4a36.run - La password 'paswword' codificada es: $2a$10$1WNA/ohPzmYGrwqkoGHZeOhjtrMHRUCfr7QKhlybb4erRcb9QlXC6
+20-11-2018 10:26:48.830 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 2ms, rows: 1
+20-11-2018 10:26:59.351 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 10665 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 10:26:59.354 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 10:26:59.364 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 10:27:17.452 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 10:27:21.167 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 10:27:27.707 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 29.358 seconds (JVM running for 30.712)
+20-11-2018 10:27:27.719 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$453d34f7.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 10:27:28.138 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$453d34f7.run - La password 'paswword' codificada es: $2a$10$zwwDSFWTcu55qKinPHlpPe8/bfx3mBYedpZCmFFJlTKMUXyxK/1vW
+20-11-2018 10:27:28.626 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 36ms, rows: 1
+20-11-2018 10:30:07.414 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 10665 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 10:30:07.414 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 10:30:07.417 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 10:30:11.528 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 10:30:12.171 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 10:30:13.764 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 6.486 seconds (JVM running for 196.769)
+20-11-2018 10:30:13.768 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$453d34f7.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 10:30:14.265 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$453d34f7.run - La password 'paswword' codificada es: $2a$10$kolrpK1GqUjeQe6uIeNfN.Pyq1qsvtHiRG6ElvkiRwNcglqv2TMJK
+20-11-2018 10:30:14.547 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 10:30:26.245 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 10665 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 10:30:26.245 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 10:30:26.246 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 10:30:29.861 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 10:30:30.510 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 10:30:32.008 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 5.892 seconds (JVM running for 215.013)
+20-11-2018 10:30:32.012 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$453d34f7.run - DataSource actual= HikariDataSource (HikariPool-3)
+20-11-2018 10:30:32.212 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$453d34f7.run - La password 'paswword' codificada es: $2a$10$HCBt27oJ399LkxsQ6lQeGuDbkNqxH6qzRsHl798zS7XLVKhu.ntkW
+20-11-2018 10:30:32.350 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 10:30:36.419 [http-nio-8080-exec-5] ERROR o.s.w.s.a.s.StandardWebSocketHandlerAdapter.tryCloseWithError - Closing session due to exception for StandardWebSocketSession[id=8, uri=/api/v1/ws/782/jxblav2n/websocket]
+org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session jxblav2n; nested exception is org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session jxblav2n: Session closed
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.delegateMessages(AbstractSockJsSession.java:391) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.sockjs.transport.session.WebSocketServerSockJsSession.handleMessage(WebSocketServerSockJsSession.java:195) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.sockjs.transport.handler.SockJsWebSocketHandler.handleTextMessage(SockJsWebSocketHandler.java:93) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:42) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81) [spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:394) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:119) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:495) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:294) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:82) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:171) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:151) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:148) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:54) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session jxblav2n: Session closed
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.delegateMessages(AbstractSockJsSession.java:383) ~[spring-websocket-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	... 25 common frames omitted
+20-11-2018 10:30:42.342 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 11048 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 10:30:42.356 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 10:30:42.361 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 10:30:59.459 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 10:31:01.504 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 10:31:06.981 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 25.985 seconds (JVM running for 27.867)
+20-11-2018 10:31:07.108 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9f2940c2.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 10:31:07.416 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$9f2940c2.run - La password 'paswword' codificada es: $2a$10$Luv3YISrv8H5DEsVrsB8je3SLNHTz7QGVmzYOJFrdJ9kR8XG.nyOy
+20-11-2018 10:31:07.977 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 20ms, rows: 1
+20-11-2018 10:32:47.488 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation
+20-11-2018 10:32:47.488 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation
+20-11-2018 10:32:47.489 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation
+20-11-2018 11:11:49.336 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 14013 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 11:11:49.360 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 11:11:49.372 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 11:12:06.471 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 11:12:08.809 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 11:12:13.667 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 25.658 seconds (JVM running for 27.685)
+20-11-2018 11:12:13.674 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$561bca29.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 11:12:13.789 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$561bca29.run - La password 'paswword' codificada es: $2a$10$jf/LyAGQ7mUm1oDNeZLJROT6i9zqlsDzfpWpzXuxf09mNkaJXEBhC
+20-11-2018 11:12:14.002 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 14ms, rows: 1
+20-11-2018 11:13:23.020 [http-nio-8080-exec-1] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 41ms, rows: 1
+20-11-2018 11:17:08.188 [http-nio-8080-exec-3] ERROR o.s.w.s.a.s.StandardWebSocketHandlerAdapter.tryCloseWithError - Closing session due to exception for StandardWebSocketSession[id=8, uri=/api/v1/ws/680/umbcy2th/websocket]
+org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session umbcy2th; nested exception is org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session umbcy2th: Session closed
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.delegateMessages(AbstractSockJsSession.java:391)
+	at org.springframework.web.socket.sockjs.transport.session.WebSocketServerSockJsSession.handleMessage(WebSocketServerSockJsSession.java:195)
+	at org.springframework.web.socket.sockjs.transport.handler.SockJsWebSocketHandler.handleTextMessage(SockJsWebSocketHandler.java:93)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:42)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:394)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:119)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:495)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:294)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:82)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:171)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:151)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:148)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:54)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.web.socket.sockjs.SockJsMessageDeliveryException: Failed to deliver message(s) [CONNECT
+accept-version:1.1,1.0
+heart-beat:10000,10000
+
+ ] for session umbcy2th: Session closed
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.delegateMessages(AbstractSockJsSession.java:383)
+	... 25 common frames omitted
+20-11-2018 11:17:09.245 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 14013 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 11:17:09.246 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 11:17:09.257 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 11:17:14.210 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 11:17:14.783 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 11:17:14.830 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+20-11-2018 11:17:14.942 [restartedMain] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at ar.edu.iua.ingweb3.Ingweb3Application.main(Ingweb3Application.java:33) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1322) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1288) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1190) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1093) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1322) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1288) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1190) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1093) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	... 41 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:580) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:544) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:250) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:1.8.0_181]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:248) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:218) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:188) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:136) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	... 55 common frames omitted
+20-11-2018 11:17:53.464 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 14013 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 11:17:53.465 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 11:17:53.466 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 11:17:57.946 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 11:17:58.806 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 11:17:58.905 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+20-11-2018 11:17:58.993 [restartedMain] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) [spring-boot-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at ar.edu.iua.ingweb3.Ingweb3Application.main(Ingweb3Application.java:33) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/home/mariano/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1322) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1288) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1190) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1093) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1322) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1288) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1190) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1093) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	... 41 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'productosRESTController' method 
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.ProductosRESTController.lista(java.lang.String,double,double)
+to {[/api/v1/productos || /api/v1/productos/],methods=[GET],produces=[application/json]}: There is already 'graphRESTController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<ar.edu.iua.ingweb3.model.Producto>> ar.edu.iua.ingweb3.web.services.GraphRESTController.lista(java.lang.String,double,double) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:580) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:544) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:250) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:1.8.0_181]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:248) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:218) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:188) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:136) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695) ~[spring-beans-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	... 55 common frames omitted
+20-11-2018 11:19:35.327 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 14013 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 11:19:35.328 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 11:19:35.329 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 11:19:39.268 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 11:19:39.613 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 11:19:40.924 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 5.714 seconds (JVM running for 474.942)
+20-11-2018 11:19:40.934 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$561bca29.run - DataSource actual= HikariDataSource (HikariPool-4)
+20-11-2018 11:19:41.043 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$561bca29.run - La password 'paswword' codificada es: $2a$10$gQ01GuPoWbLLFnBmfJaF4ea7vwFizNNwN1z7LsU8IiqnsaB0wL5Bu
+20-11-2018 11:19:41.155 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 11:28:23.849 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 15261 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 11:28:23.855 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 11:28:23.863 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 11:28:32.435 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 11:28:34.149 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 11:28:38.155 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 14.821 seconds (JVM running for 15.452)
+20-11-2018 11:28:38.162 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$963bd9b4.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 11:28:38.345 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$963bd9b4.run - La password 'paswword' codificada es: $2a$10$TgTzL6jO.zOkBAEJ7m2GReW5YG2BOv8pbWaoC0UiUXZveMVQp12JW
+20-11-2018 11:28:38.580 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 12ms, rows: 1
+20-11-2018 11:32:26.910 [http-nio-8080-exec-3] ERROR o.s.w.s.m.StompSubProtocolHandler.handleMessageFromClient - Failed to send client message to application via MessageChannel in session sa1lydez. Sending STOMP ERROR to client.
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.springframework.messaging.support.AbstractMessageChannel$ChannelInterceptorChain.triggerAfterSendCompletion(AbstractMessageChannel.java:186)
+	at org.springframework.messaging.support.AbstractMessageChannel.send(AbstractMessageChannel.java:125)
+	at org.springframework.messaging.support.AbstractMessageChannel.send(AbstractMessageChannel.java:105)
+	at org.springframework.web.socket.messaging.StompSubProtocolHandler.handleMessageFromClient(StompSubProtocolHandler.java:282)
+	at org.springframework.web.socket.messaging.SubProtocolWebSocketHandler.handleMessage(SubProtocolWebSocketHandler.java:312)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.delegateMessages(AbstractSockJsSession.java:386)
+	at org.springframework.web.socket.sockjs.transport.session.WebSocketServerSockJsSession.handleMessage(WebSocketServerSockJsSession.java:195)
+	at org.springframework.web.socket.sockjs.transport.handler.SockJsWebSocketHandler.handleTextMessage(SockJsWebSocketHandler.java:93)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:42)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:394)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:119)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:495)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:294)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:82)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:171)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:151)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:148)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:54)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+20-11-2018 11:32:28.042 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 15261 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 11:32:28.059 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 11:32:28.060 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 11:32:34.053 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 15686 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 11:32:34.055 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 11:32:34.058 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 11:32:46.490 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 11:32:48.333 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 11:32:52.866 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 19.562 seconds (JVM running for 20.482)
+20-11-2018 11:32:52.880 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$d88a0ef8.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 11:32:53.093 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$d88a0ef8.run - La password 'paswword' codificada es: $2a$10$HqC1CYwPEphvdQw1wfuDBeknlNKSdl517/DS.i2Bx8EVHI/Z62Q5a
+20-11-2018 11:32:53.447 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 16ms, rows: 1

@@ -1,13 +1,41 @@
 package ar.edu.iua.ingweb3.model;
 
+import javax.persistence.ColumnResult;
+import javax.persistence.ConstructorResult;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
+import javax.persistence.SqlResultSetMapping;
+import javax.persistence.SqlResultSetMappings;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import ar.edu.iua.ingweb3.model.dto.ArchivoReducido;
+@NamedNativeQueries({
+	@NamedNativeQuery(
+		name="archivosResumidos",
+		query="SELECT nombre,length FROM archivo WHERE length>?", 
+		resultSetMapping="archivoResumido")
+})
+
+@SqlResultSetMappings({
+	@SqlResultSetMapping(
+			name="archivoResumido",
+			classes= {
+					@ConstructorResult(
+							targetClass=ArchivoReducido.class, columns= {
+									@ColumnResult(name="nombre",type=String.class),
+									@ColumnResult(name="length",type=Long.class)
+							})
+			}		)
+	
+})
+
 
 @Entity
 @Table(name="mis_archivos")

@@ -15,4 +15,13 @@ public final class Constantes {
 	
 	public static final String URL_LOGINOK = "/loginok";
 	public static final String URL_AUTH_INFO =  "/authinfo";
+	
+	
+	public static final String URL_WEBSOCKET_ENPOINT =  URL_BASE + "/ws";
+	
+	public static final String TOPIC_SEND_WEBSOCKET_GRAPH= "/iw3/graph";
+	
+	public static final String URL_GRAPH =  URL_BASE + "/graph";
+	
+	
 }

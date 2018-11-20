@@ -1,6 +1,7 @@
 package ar.edu.iua.ingweb3.model;
 
 import java.beans.Transient;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -55,12 +56,40 @@ public class User implements UserDetails {
 	@Transient
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		List<GrantedAuthority> authorities = getRoles().stream()
-				.map(role -> new SimpleGrantedAuthority(role.getName()))
-				.collect(Collectors.toList());
+		
+		//List<Role> rolesOrdenados=getRoles().stream().sorted().collect(Collectors.toList());
+		
+		//List<Role> rolesFiltrados=rolesOrdenados.stream().filter(r -> r.getId()%2 == 0).collect(Collectors.toList());
+		
+		//Filtro tradicional
+		//List<Role> rolesFiltrados1=new ArrayList<Role>();
+		//for(Role r:rolesOrdenados) {
+		//	if(r.getId()%2 == 0) {
+		//		rolesFiltrados1.add(r);
+		//	}
+		//}		getRoles().stream().map(r -> {System.out.println(r); return r;}).collect(Collectors.toList());
+
+		
+		//Version en una sola línea
+		//List<GrantedAuthority> authorities =rolesFiltrados.stream()
+		//		.map(role -> new SimpleGrantedAuthority(role.getName()))
+		//		.collect(Collectors.toList());
+		
+		//List<GrantedAuthority> authorities1= getRoles().stream().sorted().collect(Collectors.toList())
+		//		.stream().filter(r -> r.getId()%2 == 0).collect(Collectors.toList())
+		//		.stream().map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());
+		
+		//getRoles().stream().map(r -> {System.out.println(r); return r;}).collect(Collectors.toList());
+		//getRoles().stream().map(r -> {System.out.println(r); return r;}).limit(3).collect(Collectors.toList());
+		List<GrantedAuthority> authorities =getRoles().stream()
+						.map(role -> new SimpleGrantedAuthority(role.getName()))
+						.collect(Collectors.toList());
 		return authorities;
 	}
 
+	
+	
+	
 	public String getEmail() {
 		return email;
 	}

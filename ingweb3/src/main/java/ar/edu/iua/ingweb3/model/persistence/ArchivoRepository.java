@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import ar.edu.iua.ingweb3.model.Archivo;
+import ar.edu.iua.ingweb3.model.dto.ArchivoReducido;
 
 @Repository
 public interface ArchivoRepository extends JpaRepository<Archivo, Integer> {
@@ -16,4 +17,7 @@ public interface ArchivoRepository extends JpaRepository<Archivo, Integer> {
 	//https://www.baeldung.com/spring-data-jpa-query
 	@Query("SELECT new ar.edu.iua.ingweb3.model.Archivo(a.id, a.nombre, a.length, a.mime) FROM Archivo a")
 	public List<Archivo> findAllFiles();
+	
+	@Query(name="archivosResumidos",nativeQuery=true)
+	public List<ArchivoReducido> getSinteticos(int minTamanio);
 }

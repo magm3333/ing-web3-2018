@@ -59,8 +59,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 		http.logout().logoutSuccessUrl(Constantes.URL_LOGOUTOK).deleteCookies("JSESSIONID", "rmiw3")
 				.clearAuthentication(true);
-		http.rememberMe().tokenRepository(rmRepository()).rememberMeParameter("rmparam").alwaysRemember(true)
-				.rememberMeCookieName("rmiw3").tokenValiditySeconds(60 * 60 * 24);
+		//http.rememberMe().tokenRepository(rmRepository()).rememberMeParameter("rmparam").alwaysRemember(true)
+				//.rememberMeCookieName("rmiw3").tokenValiditySeconds(60 * 60 * 24);
 
 		http.csrf().disable();
 

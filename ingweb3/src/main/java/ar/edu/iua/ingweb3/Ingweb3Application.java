@@ -1,5 +1,7 @@
 package ar.edu.iua.ingweb3;
 
+import java.util.List;
+
 import javax.sql.DataSource;
 
 import org.slf4j.Logger;
@@ -13,6 +15,9 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import ar.edu.iua.ingweb3.business.impl.util.fs.ArchivoFSProperties;
+import ar.edu.iua.ingweb3.model.dto.ArchivoReducido;
+import ar.edu.iua.ingweb3.model.persistence.ArchivoRepository;
+import ar.edu.iua.ingweb3.model.persistence.UsuariosRespository;
 
 @SpringBootApplication(exclude= {SecurityAutoConfiguration.class})
 @EnableConfigurationProperties({
@@ -30,10 +35,21 @@ public class Ingweb3Application implements CommandLineRunner {
 
 	@Autowired
 	private PasswordEncoder pe;
+	@Autowired
+	private UsuariosRespository uDAO;
+	@Autowired
+	private ArchivoRepository aDAO;
+
 	
 	@Override
 	public void run(String... args) throws Exception {
 		log.debug("DataSource actual= " + dataSource);
 		log.debug("La password 'paswword' codificada es: "+pe.encode("password"));
+		uDAO.setPassword(pe.encode("123"), "user", "user");
+		
+		List<ArchivoReducido> ar= aDAO.getSinteticos(1);
+		
+		for(ArchivoReducido a:ar)
+			System.out.println(a);
 	}
 }
