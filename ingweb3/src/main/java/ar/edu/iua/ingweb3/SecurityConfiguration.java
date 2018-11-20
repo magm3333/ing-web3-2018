@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -20,7 +21,10 @@ import ar.edu.iua.ingweb3.web.services.Constantes;
 
 @Configuration
 @EnableWebSecurity
-
+@EnableGlobalMethodSecurity(
+		prePostEnabled = true, 
+		securedEnabled = true, 
+		jsr250Enabled = true) 
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	@Autowired
@@ -57,7 +61,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		http.formLogin().loginPage(Constantes.URL_DENY).defaultSuccessUrl(Constantes.URL_LOGINOK)
 				.loginProcessingUrl("/dologin").permitAll().failureForwardUrl(Constantes.URL_DENY);
 
-		http.logout().logoutSuccessUrl(Constantes.URL_LOGOUTOK).deleteCookies("JSESSIONID", "rmiw3")
+		http.logout().logoutSuccessUrl(Constantes.URL_LOGOUTOK).deleteCookies("SESSION", "rmiw3")
 				.clearAuthentication(true);
 		//http.rememberMe().tokenRepository(rmRepository()).rememberMeParameter("rmparam").alwaysRemember(true)
 				//.rememberMeCookieName("rmiw3").tokenValiditySeconds(60 * 60 * 24);

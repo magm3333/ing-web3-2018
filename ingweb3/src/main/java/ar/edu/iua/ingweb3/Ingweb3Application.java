@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.pentaho.reporting.engine.classic.core.ClassicEngineBoot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,9 +44,13 @@ public class Ingweb3Application implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
+		ClassicEngineBoot.getInstance().start();
+		
+		
+		
 		log.debug("DataSource actual= " + dataSource);
 		log.debug("La password 'paswword' codificada es: "+pe.encode("password"));
-		uDAO.setPassword(pe.encode("123"), "user", "user");
+		uDAO.setPassword(pe.encode("password"), "user", "user");
 		
 		List<ArchivoReducido> ar= aDAO.getSinteticos(1);
 		

@@ -19,5 +19,6 @@ public class ScheduledEvents {
 	// @Scheduled(cron = " 0 0/1 * 1/1 * ? *")
 	public void estados() {
 		graphService.pushGraphData();
+		
 	}
 }

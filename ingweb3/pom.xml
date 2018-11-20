@@ -107,7 +107,7 @@
 		</dependency>
 		
 		<!--  WEB SOCKETS	-->
-				<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-websocket</artifactId>
 		</dependency>
@@ -126,8 +126,152 @@
 			<version>2.3.3-1</version>
 		</dependency>
 		<!--  END WEB SOCKETS	-->
+		
+				<!-- Pentaho Reporting -->
+		<dependency>
+			<groupId>pentaho-reporting-engine</groupId>
+			<artifactId>pentaho-reporting-engine-classic-core</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-library</groupId>
+			<artifactId>libbase</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-library</groupId>
+			<artifactId>librepository</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-reporting-engine</groupId>
+			<artifactId>pentaho-reporting-engine-legacy-functions</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-library</groupId>
+			<artifactId>libloader</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-library</groupId>
+			<artifactId>libserializer</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-library</groupId>
+			<artifactId>libformula</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-library</groupId>
+			<artifactId>libfonts</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-library</groupId>
+			<artifactId>libformat</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-library</groupId>
+			<artifactId>libdocbundle</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-library</groupId>
+			<artifactId>libxml</artifactId>
+			<version>6.1.0.9-307</version>
+		</dependency>
+		<dependency>
+			<groupId>batik</groupId>
+			<artifactId>batik-bridge</artifactId>
+			<version>1.6-1</version>
+		</dependency>
+		<dependency>
+			<groupId>ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>2.1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext-rtf</artifactId>
+			<version>2.1.7</version>
+		</dependency>
+		<!-- Pentaho Reporting -->
+
+
+<!-- 
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-data-redis</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+	<dependency>
+			<groupId>it.ozimov</groupId>
+			<artifactId>embedded-redis</artifactId>
+			<version>0.7.2</version>
+		</dependency>
+ -->
+
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-jdbc</artifactId>
+		</dependency>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>pentaho.resolve.repo</id>
+			<name>Pentaho Omni</name>
+			<url>http://nexus.pentaho.org/content/groups/omni</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<!-- mvn clean package ==> default WAR mvn clean package -Dbuild=jar ==> 
 		build jar -->

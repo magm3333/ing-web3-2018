@@ -579,3 +579,1222 @@ java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
 20-11-2018 11:32:52.880 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$d88a0ef8.run - DataSource actual= HikariDataSource (HikariPool-1)
 20-11-2018 11:32:53.093 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$d88a0ef8.run - La password 'paswword' codificada es: $2a$10$HqC1CYwPEphvdQw1wfuDBeknlNKSdl517/DS.i2Bx8EVHI/Z62Q5a
 20-11-2018 11:32:53.447 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 16ms, rows: 1
+20-11-2018 11:58:52.291 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 15686 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 11:58:52.291 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 11:58:52.292 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 13:55:51.010 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 27095 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 13:55:51.013 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 13:55:51.020 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 13:56:04.896 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 13:56:06.282 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportController': Unsatisfied dependency expressed through field 'reportService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'ar.edu.iua.ingweb3.business.IReportService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+20-11-2018 13:56:06.759 [restartedMain] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportController': Unsatisfied dependency expressed through field 'reportService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'ar.edu.iua.ingweb3.business.IReportService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at ar.edu.iua.ingweb3.Ingweb3Application.main(Ingweb3Application.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'ar.edu.iua.ingweb3.business.IReportService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1506)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 24 common frames omitted
+20-11-2018 13:57:26.820 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 27289 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 13:57:26.825 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 13:57:26.842 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 13:57:40.133 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 13:57:43.346 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 13:57:48.174 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 22.215 seconds (JVM running for 23.079)
+20-11-2018 13:57:48.181 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$1c89f23a.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 13:57:48.387 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$1c89f23a.run - La password 'paswword' codificada es: $2a$10$coyI9zqN08PgdkAz5UpYV.PLgbEYtWPoTyC18FbUyk6CzJhRSSq6K
+20-11-2018 13:57:48.855 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 33ms, rows: 1
+20-11-2018 14:06:13.234 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 27289 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 14:06:13.267 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 14:06:13.268 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 14:06:16.056 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 14:06:16.579 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 14:06:17.604 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 4.446 seconds (JVM running for 532.508)
+20-11-2018 14:06:17.610 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$1c89f23a.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 14:06:17.730 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$1c89f23a.run - La password 'paswword' codificada es: $2a$10$fAkM025qxmZ0sKEXGblU4.kVXF6wGQf3V89B4okaOyTAjKKe65rJa
+20-11-2018 14:06:17.871 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 14:06:25.622 [http-nio-8080-exec-1] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 89ms, rows: 1
+20-11-2018 14:06:37.414 [http-nio-8080-exec-3] WARN  n.s.e.config.ConfigurationFactory.parseConfiguration - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/home/mariano/.m2/repository/net/sf/ehcache/ehcache/1.2/ehcache-1.2.jar!/ehcache-failsafe.xml
+20-11-2018 14:06:37.473 [http-nio-8080-exec-3] ERROR a.e.i.i.w.services.ReportController.doReport - There are no root-handlers registered for the factory for type class org.pentaho.reporting.engine.classic.core.MasterReport
+org.hibernate.service.spi.ServiceException: There are no root-handlers registered for the factory for type class org.pentaho.reporting.engine.classic.core.MasterReport
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:58) ~[classes/:na]
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:56) [classes/:na]
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:46) [classes/:na]
+	at ar.edu.iua.ingweb3.web.services.ReportController.report(ReportController.java:35) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: org.pentaho.reporting.libraries.resourceloader.ResourceCreationException: There are no root-handlers registered for the factory for type class org.pentaho.reporting.engine.classic.core.MasterReport
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:164) ~[libxml-6.1.0.9-307.jar:6.1.0.9-307.-1]
+	at org.pentaho.reporting.libraries.resourceloader.DefaultResourceManagerBackend.create(DefaultResourceManagerBackend.java:225) ~[libloader-6.1.0.9-307.jar:6.1.0.9-307.-1]
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:367) ~[libloader-6.1.0.9-307.jar:6.1.0.9-307.-1]
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:334) ~[libloader-6.1.0.9-307.jar:6.1.0.9-307.-1]
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.createDirectly(ResourceManager.java:200) ~[libloader-6.1.0.9-307.jar:6.1.0.9-307.-1]
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:41) ~[classes/:na]
+	... 99 common frames omitted
+20-11-2018 14:11:32.685 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 28719 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 14:11:32.688 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 14:11:32.693 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 14:11:41.729 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 14:11:43.084 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 14:11:46.533 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 14.473 seconds (JVM running for 15.291)
+20-11-2018 14:11:46.787 [restartedMain] WARN  n.s.e.config.ConfigurationFactory.parseConfiguration - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/home/mariano/.m2/repository/net/sf/ehcache/ehcache/1.2/ehcache-1.2.jar!/ehcache-failsafe.xml
+20-11-2018 14:11:47.412 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-beanshell
+20-11-2018 14:11:47.413 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-bsf
+20-11-2018 14:11:47.472 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module output-table-xls
+20-11-2018 14:11:47.562 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.table.xls.ExcelTableModule' for module 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule not initializable.
+20-11-2018 14:11:47.565 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.csv.CSVExportGUIModule not initializable.
+20-11-2018 14:11:47.566 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.xls.ExcelExportGUIModule not initializable.
+20-11-2018 14:11:47.566 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$68ec658c.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 14:11:47.751 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$68ec658c.run - La password 'paswword' codificada es: $2a$10$Y6xmyiODfeR2Js27XIXkgeIJ1IjM7fpDRH687vFOAMcJXlGhfBUQC
+20-11-2018 14:11:47.986 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 13ms, rows: 1
+20-11-2018 14:12:40.914 [http-nio-8080-exec-1] WARN  o.p.r.l.d.m.p.BundleMetaDataEntryReadHandlerFactory.configure - Configured configuration-properties based override for global read-hander. Change your code to use proper module-initializers instead. This method of configuring the parser will go away in the next major version.
+20-11-2018 14:12:41.113 [http-nio-8080-exec-1] ERROR a.e.i.i.w.services.ReportController.doReport - Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+org.hibernate.service.spi.ServiceException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:58)
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:56)
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:46)
+	at ar.edu.iua.ingweb3.web.services.ReportController.report(ReportController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.pentaho.reporting.libraries.resourceloader.ResourceCreationException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:214)
+	at org.pentaho.reporting.libraries.resourceloader.DefaultResourceManagerBackend.create(DefaultResourceManagerBackend.java:225)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:367)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:334)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.createDirectly(ResourceManager.java:200)
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:41)
+	... 99 common frames omitted
+Caused by: org.pentaho.reporting.libraries.xmlns.parser.ParseException: Failure while loading data: layout.xml [Location: Line=5 Column=11] 
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.performExternalParsing(AbstractXmlReadHandler.java:303)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.parseLayout(ContentRootElementHandler.java:292)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.parseLocalFiles(ContentRootElementHandler.java:283)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.doneParsing(ContentRootElementHandler.java:264)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.endElement(AbstractXmlReadHandler.java:148)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.endElement(RootXmlReadHandler.java:516)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:205)
+	... 104 common frames omitted
+Caused by: org.pentaho.reporting.libraries.resourceloader.ResourceCreationException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=layout.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=::Report}=org.pentaho.reporting.engine.classic.core.MasterReport={name="", type="master-report"}, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=prpt-spec-version}=6001000, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=::Include-parser}=true, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=property-expansion}=false}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:214)
+	at org.pentaho.reporting.libraries.resourceloader.DefaultResourceManagerBackend.create(DefaultResourceManagerBackend.java:225)
+	at org.pentaho.reporting.libraries.docbundle.BundleResourceManagerBackend.create(BundleResourceManagerBackend.java:142)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:367)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:334)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.performExternalParsing(AbstractXmlReadHandler.java:297)
+	... 118 common frames omitted
+Caused by: org.pentaho.reporting.libraries.xmlns.parser.ParseException: Failed to instantiate the specified preprocessor 'org.pentaho.reporting.engine.classic.wizard.WizardProcessor' [Location: Line=3 Column=85] 
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.layout.LayoutPreprocessorReadHandler.startParsing(LayoutPreprocessorReadHandler.java:63)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.startElement(AbstractXmlReadHandler.java:108)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.recurse(RootXmlReadHandler.java:296)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.startElement(AbstractXmlReadHandler.java:121)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.startElement(RootXmlReadHandler.java:415)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:205)
+	... 123 common frames omitted
+20-11-2018 14:13:36.978 [http-nio-8080-exec-4] ERROR a.e.i.i.w.services.ReportController.doReport - Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+org.hibernate.service.spi.ServiceException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:58)
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:56)
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:46)
+	at ar.edu.iua.ingweb3.web.services.ReportController.report(ReportController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.pentaho.reporting.libraries.resourceloader.ResourceCreationException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:214)
+	at org.pentaho.reporting.libraries.resourceloader.DefaultResourceManagerBackend.create(DefaultResourceManagerBackend.java:225)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:367)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:334)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.createDirectly(ResourceManager.java:200)
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:41)
+	... 99 common frames omitted
+Caused by: org.pentaho.reporting.libraries.xmlns.parser.ParseException: Failure while loading data: layout.xml [Location: Line=5 Column=11] 
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.performExternalParsing(AbstractXmlReadHandler.java:303)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.parseLayout(ContentRootElementHandler.java:292)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.parseLocalFiles(ContentRootElementHandler.java:283)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.doneParsing(ContentRootElementHandler.java:264)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.endElement(AbstractXmlReadHandler.java:148)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.endElement(RootXmlReadHandler.java:516)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:205)
+	... 104 common frames omitted
+Caused by: org.pentaho.reporting.libraries.resourceloader.ResourceCreationException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=layout.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=::Report}=org.pentaho.reporting.engine.classic.core.MasterReport={name="", type="master-report"}, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=prpt-spec-version}=6001000, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=::Include-parser}=true, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=property-expansion}=false}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:214)
+	at org.pentaho.reporting.libraries.resourceloader.DefaultResourceManagerBackend.create(DefaultResourceManagerBackend.java:225)
+	at org.pentaho.reporting.libraries.docbundle.BundleResourceManagerBackend.create(BundleResourceManagerBackend.java:142)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:367)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:334)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.performExternalParsing(AbstractXmlReadHandler.java:297)
+	... 118 common frames omitted
+Caused by: org.pentaho.reporting.libraries.xmlns.parser.ParseException: Failed to instantiate the specified preprocessor 'org.pentaho.reporting.engine.classic.wizard.WizardProcessor' [Location: Line=3 Column=85] 
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.layout.LayoutPreprocessorReadHandler.startParsing(LayoutPreprocessorReadHandler.java:63)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.startElement(AbstractXmlReadHandler.java:108)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.recurse(RootXmlReadHandler.java:296)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.startElement(AbstractXmlReadHandler.java:121)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.startElement(RootXmlReadHandler.java:415)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:205)
+	... 123 common frames omitted
+20-11-2018 14:15:54.692 [http-nio-8080-exec-7] ERROR a.e.i.i.w.services.ReportController.doReport - Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+org.hibernate.service.spi.ServiceException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:58)
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:56)
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:46)
+	at ar.edu.iua.ingweb3.web.services.ReportController.report(ReportController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.pentaho.reporting.libraries.resourceloader.ResourceCreationException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:214)
+	at org.pentaho.reporting.libraries.resourceloader.DefaultResourceManagerBackend.create(DefaultResourceManagerBackend.java:225)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:367)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:334)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.createDirectly(ResourceManager.java:200)
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:41)
+	... 99 common frames omitted
+Caused by: org.pentaho.reporting.libraries.xmlns.parser.ParseException: Failure while loading data: layout.xml [Location: Line=5 Column=11] 
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.performExternalParsing(AbstractXmlReadHandler.java:303)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.parseLayout(ContentRootElementHandler.java:292)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.parseLocalFiles(ContentRootElementHandler.java:283)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.doneParsing(ContentRootElementHandler.java:264)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.endElement(AbstractXmlReadHandler.java:148)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.endElement(RootXmlReadHandler.java:516)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:205)
+	... 104 common frames omitted
+Caused by: org.pentaho.reporting.libraries.resourceloader.ResourceCreationException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=layout.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=::Report}=org.pentaho.reporting.engine.classic.core.MasterReport={name="", type="master-report"}, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@70c74382, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=prpt-spec-version}=6001000, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=::Include-parser}=true, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@75283d87, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=property-expansion}=false}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:214)
+	at org.pentaho.reporting.libraries.resourceloader.DefaultResourceManagerBackend.create(DefaultResourceManagerBackend.java:225)
+	at org.pentaho.reporting.libraries.docbundle.BundleResourceManagerBackend.create(BundleResourceManagerBackend.java:142)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:367)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:334)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.performExternalParsing(AbstractXmlReadHandler.java:297)
+	... 118 common frames omitted
+Caused by: org.pentaho.reporting.libraries.xmlns.parser.ParseException: Failed to instantiate the specified preprocessor 'org.pentaho.reporting.engine.classic.wizard.WizardProcessor' [Location: Line=3 Column=85] 
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.layout.LayoutPreprocessorReadHandler.startParsing(LayoutPreprocessorReadHandler.java:63)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.startElement(AbstractXmlReadHandler.java:108)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.recurse(RootXmlReadHandler.java:296)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.startElement(AbstractXmlReadHandler.java:121)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.startElement(RootXmlReadHandler.java:415)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:205)
+	... 123 common frames omitted
+20-11-2018 14:21:58.149 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 28719 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 14:21:58.152 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 14:21:58.152 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 14:22:01.173 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 14:22:01.640 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 14:22:02.749 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 4.682 seconds (JVM running for 631.507)
+20-11-2018 14:22:02.753 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$68ec658c.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 14:22:02.888 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$68ec658c.run - La password 'paswword' codificada es: $2a$10$.TeNi4TKNhlX9PsG3IfXau7sQ6sYoxd1WML77sdSFAKGfWShdqa96
+20-11-2018 14:22:03.084 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 14:23:42.460 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 30418 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 14:23:42.462 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 14:23:42.466 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 14:23:52.856 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 14:23:54.962 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 14:24:01.100 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 19.431 seconds (JVM running for 20.272)
+20-11-2018 14:24:01.568 [restartedMain] WARN  n.s.e.config.ConfigurationFactory.parseConfiguration - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/home/mariano/.m2/repository/net/sf/ehcache/ehcache/1.2/ehcache-1.2.jar!/ehcache-failsafe.xml
+20-11-2018 14:24:02.657 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-beanshell
+20-11-2018 14:24:02.659 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-bsf
+20-11-2018 14:24:02.841 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module output-table-xls
+20-11-2018 14:24:02.981 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.table.xls.ExcelTableModule' for module 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule not initializable.
+20-11-2018 14:24:02.987 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.csv.CSVExportGUIModule not initializable.
+20-11-2018 14:24:02.987 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.xls.ExcelExportGUIModule not initializable.
+20-11-2018 14:24:02.988 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$acba7e7f.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 14:24:03.405 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$acba7e7f.run - La password 'paswword' codificada es: $2a$10$rEzJovE7D5ApA2gaJou5ceiRiclUEeKU5LM4qixSQ1uKWouZ1JoB6
+20-11-2018 14:24:03.849 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 20ms, rows: 1
+20-11-2018 14:25:15.235 [http-nio-8080-exec-2] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 69ms, rows: 1
+20-11-2018 14:25:15.377 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported - Request method 'POST' not supported
+20-11-2018 14:25:15.379 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+20-11-2018 14:25:52.872 [http-nio-8080-exec-3] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 10ms, rows: 1
+20-11-2018 14:26:31.320 [http-nio-8080-exec-6] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 14ms, rows: 1
+20-11-2018 14:27:19.549 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 30418 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 14:27:19.549 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 14:27:19.550 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 14:27:22.146 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 14:27:22.521 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 14:27:23.608 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 4.128 seconds (JVM running for 222.78)
+20-11-2018 14:27:23.628 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$acba7e7f.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 14:27:23.757 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$acba7e7f.run - La password 'paswword' codificada es: $2a$10$YShBSviTbysvBUiK5bNHzeFF6nxaPjfNQkdX4JotPJ46XWMq17Q.i
+20-11-2018 14:27:23.885 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 5ms, rows: 1
+20-11-2018 14:27:37.704 [http-nio-8080-exec-2] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 4ms, rows: 1
+20-11-2018 14:27:45.969 [http-nio-8080-exec-3] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 3ms, rows: 1
+20-11-2018 14:34:12.626 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 30418 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 14:34:12.627 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 14:34:12.627 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 14:34:15.190 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 14:34:15.807 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 14:34:17.407 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 4.845 seconds (JVM running for 636.578)
+20-11-2018 14:34:17.412 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$acba7e7f.run - DataSource actual= HikariDataSource (HikariPool-3)
+20-11-2018 14:34:17.530 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$acba7e7f.run - La password 'paswword' codificada es: $2a$10$ppVwkmhRF182eynXHdC28uTzy3J1mAUDddq9GHSDyYOTH8us7Yxpu
+20-11-2018 14:34:17.674 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 4ms, rows: 1
+20-11-2018 14:37:02.528 [http-nio-8080-exec-2] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 5ms, rows: 1
+20-11-2018 14:37:37.659 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 4ms, rows: 1
+20-11-2018 14:39:53.478 [http-nio-8080-exec-10] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 12ms, rows: 1
+20-11-2018 14:41:01.603 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 26ms, rows: 1
+20-11-2018 14:42:42.338 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present
+20-11-2018 14:43:24.438 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 10ms, rows: 1
+20-11-2018 14:45:11.571 [http-nio-8080-exec-10] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 9ms, rows: 1
+20-11-2018 14:48:21.179 [http-nio-8080-exec-9] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 22ms, rows: 1
+20-11-2018 14:55:19.023 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 30418 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 14:55:19.024 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 14:55:19.025 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 14:55:23.326 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 14:55:24.053 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 14:55:26.263 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 7.675 seconds (JVM running for 1905.434)
+20-11-2018 14:55:26.266 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$acba7e7f.run - DataSource actual= HikariDataSource (HikariPool-4)
+20-11-2018 14:55:26.381 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$acba7e7f.run - La password 'paswword' codificada es: $2a$10$9LkYnGwN9Wg15/.Dk6zMle/sZfebqRmEDbocpiWeEGSXQwz0ejGse
+20-11-2018 14:55:26.534 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 15:04:48.917 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 2597 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 15:04:48.928 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 15:04:48.936 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 15:05:00.019 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 15:05:01.752 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 15:05:06.866 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 18.805 seconds (JVM running for 19.531)
+20-11-2018 15:05:07.079 [restartedMain] WARN  n.s.e.config.ConfigurationFactory.parseConfiguration - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/home/mariano/.m2/repository/net/sf/ehcache/ehcache/1.2/ehcache-1.2.jar!/ehcache-failsafe.xml
+20-11-2018 15:05:07.973 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-beanshell
+20-11-2018 15:05:07.974 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-bsf
+20-11-2018 15:05:08.084 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module output-table-xls
+20-11-2018 15:05:08.194 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.table.xls.ExcelTableModule' for module 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule not initializable.
+20-11-2018 15:05:08.199 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.csv.CSVExportGUIModule not initializable.
+20-11-2018 15:05:08.200 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.xls.ExcelExportGUIModule not initializable.
+20-11-2018 15:05:08.201 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$e063e0db.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 15:05:08.395 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$e063e0db.run - La password 'paswword' codificada es: $2a$10$dNUDLiPbo1otSs8JJ0HcK.9CtBdqVdhgRzxVia1k76k2WknhGvwQC
+20-11-2018 15:05:08.723 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 19ms, rows: 1
+20-11-2018 15:05:48.579 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 56ms, rows: 1
+20-11-2018 15:10:05.792 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 2597 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 15:10:05.793 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 15:10:05.794 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 15:10:08.842 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 15:10:09.525 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 15:10:10.931 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 5.19 seconds (JVM running for 323.595)
+20-11-2018 15:10:10.939 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$e063e0db.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 15:10:11.061 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$e063e0db.run - La password 'paswword' codificada es: $2a$10$7FAOctelj7DRz8QdwpdheOzm.gUgLqknP6bFgJZJ2zeDHmxNHAISi
+20-11-2018 15:10:11.353 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 15:12:11.312 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 3742 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 15:12:11.315 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 15:12:11.319 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 15:12:21.421 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 15:12:22.856 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 15:12:26.903 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 16.217 seconds (JVM running for 17.124)
+20-11-2018 15:12:27.193 [restartedMain] WARN  n.s.e.config.ConfigurationFactory.parseConfiguration - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/home/mariano/.m2/repository/net/sf/ehcache/ehcache/1.2/ehcache-1.2.jar!/ehcache-failsafe.xml
+20-11-2018 15:12:28.106 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-beanshell
+20-11-2018 15:12:28.107 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-bsf
+20-11-2018 15:12:28.195 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module output-table-xls
+20-11-2018 15:12:28.328 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.table.xls.ExcelTableModule' for module 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule not initializable.
+20-11-2018 15:12:28.336 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.csv.CSVExportGUIModule not initializable.
+20-11-2018 15:12:28.336 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.xls.ExcelExportGUIModule not initializable.
+20-11-2018 15:12:28.337 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5cbfb5d3.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 15:12:28.558 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5cbfb5d3.run - La password 'paswword' codificada es: $2a$10$L.3WwejRMnOhifBEVtsYj.vUgJcI7ukp1b8EZiyet8oYnyU37.iOy
+20-11-2018 15:12:28.799 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 11ms, rows: 1
+20-11-2018 15:12:59.598 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 45ms, rows: 1
+20-11-2018 15:24:39.113 [http-nio-8080-exec-7] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 5ms, rows: 1
+20-11-2018 15:25:59.624 [http-nio-8080-exec-3] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 5ms, rows: 1
+20-11-2018 15:33:54.584 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 3742 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 15:33:54.585 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 15:33:54.586 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 15:34:00.881 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 15:34:01.623 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 15:34:04.757 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 10.333 seconds (JVM running for 1314.978)
+20-11-2018 15:34:04.762 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5cbfb5d3.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 15:34:05.073 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5cbfb5d3.run - La password 'paswword' codificada es: $2a$10$N.iobjQrT0uk5OQTmMIbZeIzyQqJ8MVa97sPZyNkclO9fdGlrmcry
+20-11-2018 15:34:05.328 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 2ms, rows: 1
+20-11-2018 15:40:02.759 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 3923 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 15:40:02.775 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 15:40:02.781 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 15:40:16.077 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 15:40:17.735 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 15:40:22.961 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 21.309 seconds (JVM running for 22.071)
+20-11-2018 15:40:23.348 [restartedMain] WARN  n.s.e.config.ConfigurationFactory.parseConfiguration - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/home/mariano/.m2/repository/net/sf/ehcache/ehcache/1.2/ehcache-1.2.jar!/ehcache-failsafe.xml
+20-11-2018 15:40:24.223 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-beanshell
+20-11-2018 15:40:24.224 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module misc-bsf
+20-11-2018 15:40:24.422 [restartedMain] WARN  o.p.r.l.base.boot.PackageState.initialize - Unable to initialize the module output-table-xls
+20-11-2018 15:40:24.555 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.table.xls.ExcelTableModule' for module 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule not initializable.
+20-11-2018 15:40:24.562 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.csv.CSVExportGUIModule not initializable.
+20-11-2018 15:40:24.562 [restartedMain] WARN  o.p.r.l.base.boot.PackageManager.isInitializable - Required dependency 'org.pentaho.reporting.engine.classic.core.modules.output.fast.FastExportModule' for module 'org.pentaho.reporting.engine.classic.core.modules.gui.xls.ExcelExportGUIModule not initializable.
+20-11-2018 15:40:24.563 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - DataSource actual= HikariDataSource (HikariPool-1)
+20-11-2018 15:40:24.754 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - La password 'paswword' codificada es: $2a$10$BGdULwnDRPrORE4dKp8gXu.Scs9u8pmqP7JnzFF4S3SKJvOLZ6qDm
+20-11-2018 15:40:25.149 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 38ms, rows: 1
+20-11-2018 15:41:34.452 [http-nio-8080-exec-1] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 278ms, rows: 1
+20-11-2018 15:52:58.251 [http-nio-8080-exec-1] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 6ms, rows: 1
+20-11-2018 16:07:58.010 [http-nio-8080-exec-5] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 6ms, rows: 1
+20-11-2018 16:08:21.231 [http-nio-8080-exec-8] WARN  o.p.r.l.d.m.p.BundleMetaDataEntryReadHandlerFactory.configure - Configured configuration-properties based override for global read-hander. Change your code to use proper module-initializers instead. This method of configuring the parser will go away in the next major version.
+20-11-2018 16:08:21.512 [http-nio-8080-exec-8] ERROR a.e.i.i.w.services.ReportController.doReport - Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@37ae20db, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@3706dc7b}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+org.hibernate.service.spi.ServiceException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@37ae20db, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@3706dc7b}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:58)
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:56)
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:46)
+	at ar.edu.iua.ingweb3.web.services.ReportController.report(ReportController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:147)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.pentaho.reporting.libraries.resourceloader.ResourceCreationException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=content.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@37ae20db, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@3706dc7b}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:214)
+	at org.pentaho.reporting.libraries.resourceloader.DefaultResourceManagerBackend.create(DefaultResourceManagerBackend.java:225)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:367)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:334)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.createDirectly(ResourceManager.java:200)
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:41)
+	... 103 common frames omitted
+Caused by: org.pentaho.reporting.libraries.xmlns.parser.ParseException: Failure while loading data: layout.xml [Location: Line=5 Column=11] 
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.performExternalParsing(AbstractXmlReadHandler.java:303)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.parseLayout(ContentRootElementHandler.java:292)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.parseLocalFiles(ContentRootElementHandler.java:283)
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.content.ContentRootElementHandler.doneParsing(ContentRootElementHandler.java:264)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.endElement(AbstractXmlReadHandler.java:148)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.endElement(RootXmlReadHandler.java:516)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:205)
+	... 108 common frames omitted
+Caused by: org.pentaho.reporting.libraries.resourceloader.ResourceCreationException: Unable to parse the document: ResourceKey{schema=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader, identifier=layout.xml, factoryParameters={org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=::Report}=org.pentaho.reporting.engine.classic.core.MasterReport={name="", type="master-report"}, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository}=org.pentaho.reporting.libraries.repository.zipreader.ZipReadRepository@3706dc7b, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=prpt-spec-version}=6001000, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=::Include-parser}=true, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=repository-loader}=org.pentaho.reporting.libraries.docbundle.bundleloader.ZipResourceBundleLoader@37ae20db, org.pentaho.reporting.libraries.resourceloader.FactoryParameterKey{name=property-expansion}=false}, parent=ResourceKey{schema=org.pentaho.reporting.libraries.resourceloader.loader.URLResourceLoader, identifier=file:/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes/report/demo.prpt, factoryParameters={}, parent=null}}
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:214)
+	at org.pentaho.reporting.libraries.resourceloader.DefaultResourceManagerBackend.create(DefaultResourceManagerBackend.java:225)
+	at org.pentaho.reporting.libraries.docbundle.BundleResourceManagerBackend.create(BundleResourceManagerBackend.java:142)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:367)
+	at org.pentaho.reporting.libraries.resourceloader.ResourceManager.create(ResourceManager.java:334)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.performExternalParsing(AbstractXmlReadHandler.java:297)
+	... 122 common frames omitted
+Caused by: org.pentaho.reporting.libraries.xmlns.parser.ParseException: Failed to instantiate the specified preprocessor 'org.pentaho.reporting.engine.classic.wizard.WizardProcessor' [Location: Line=3 Column=85] 
+	at org.pentaho.reporting.engine.classic.core.modules.parser.bundle.layout.LayoutPreprocessorReadHandler.startParsing(LayoutPreprocessorReadHandler.java:63)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.startElement(AbstractXmlReadHandler.java:108)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.recurse(RootXmlReadHandler.java:296)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlReadHandler.startElement(AbstractXmlReadHandler.java:121)
+	at org.pentaho.reporting.libraries.xmlns.parser.RootXmlReadHandler.startElement(RootXmlReadHandler.java:415)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.pentaho.reporting.libraries.xmlns.parser.AbstractXmlResourceFactory.create(AbstractXmlResourceFactory.java:205)
+	... 127 common frames omitted
+20-11-2018 16:22:47.733 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 3923 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 16:22:47.734 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 16:22:47.735 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 16:22:52.209 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 16:22:52.939 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 16:22:55.719 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 8.179 seconds (JVM running for 2574.829)
+20-11-2018 16:22:55.737 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - DataSource actual= HikariDataSource (HikariPool-2)
+20-11-2018 16:22:55.981 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - La password 'paswword' codificada es: $2a$10$QU6zyAEL0zPn0vnz9QeXXuIgZX/zAQbNU2iOeGS09R0CS8iJfXXFm
+20-11-2018 16:22:56.301 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 7ms, rows: 1
+20-11-2018 16:22:58.662 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 3923 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 16:22:58.666 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 16:22:58.666 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 16:23:02.343 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 16:23:03.077 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 16:23:04.971 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 6.43 seconds (JVM running for 2584.081)
+20-11-2018 16:23:04.976 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - DataSource actual= HikariDataSource (HikariPool-3)
+20-11-2018 16:23:05.235 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - La password 'paswword' codificada es: $2a$10$/XYul.oeQP0BDeeHhHIlyOKBDiiRzmDhItRU1KpjSlQWtKM0rEzsi
+20-11-2018 16:23:05.416 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1
+20-11-2018 16:23:57.673 [http-nio-8080-exec-2] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 19ms, rows: 1
+20-11-2018 16:27:50.298 [http-nio-8080-exec-4] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 2ms, rows: 1
+20-11-2018 16:28:12.829 [http-nio-8080-exec-5] ERROR a.e.i.i.w.services.ReportController.doReport - class path resource [report/demo1.prpt] cannot be resolved to URL because it does not exist
+org.hibernate.service.spi.ServiceException: class path resource [report/demo1.prpt] cannot be resolved to URL because it does not exist
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:62) ~[classes/:na]
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:56) [classes/:na]
+	at ar.edu.iua.ingweb3.web.services.ReportController.doReport(ReportController.java:46) [classes/:na]
+	at ar.edu.iua.ingweb3.web.services.ReportController.report(ReportController.java:35) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:147) [spring-session-core-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81) [spring-session-core-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: java.io.FileNotFoundException: class path resource [report/demo1.prpt] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:195) ~[spring-core-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at ar.edu.iua.ingweb3.business.impl.ReportBusiness.runReport(ReportBusiness.java:40) ~[classes/:na]
+	... 103 common frames omitted
+20-11-2018 16:29:24.517 [http-nio-8080-exec-4] WARN  c.zaxxer.hikari.pool.ProxyConnection.checkException - HikariPool-3 - Connection com.mysql.jdbc.JDBC4Connection@5d5774f2 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 19 milliseconds ago.  The last packet sent successfully to the server was 31 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_181]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3749) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2512) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:4796) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:395) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java) [HikariCP-2.7.9.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.resetConnection(AbstractLogicalConnectionImplementor.java:101) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.afterCompletion(LogicalConnectionManagedImpl.java:270) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:125) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:251) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:100) [hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:563) [spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:838) [spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:812) [spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.TransactionTemplate.rollbackOnException(TransactionTemplate.java:168) [spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:144) [spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.session.jdbc.JdbcOperationsSessionRepository.save(JdbcOperationsSessionRepository.java:369) [spring-session-jdbc-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.session.jdbc.JdbcOperationsSessionRepository.save(JdbcOperationsSessionRepository.java:131) [spring-session-jdbc-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.commitSession(SessionRepositoryFilter.java:234) [spring-session-core-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.access$100(SessionRepositoryFilter.java:197) [spring-session-core-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryResponseWrapper.onResponseCommitted(SessionRepositoryFilter.java:185) [spring-session-core-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.session.web.http.OnCommittedResponseWrapper.doOnResponseCommitted(OnCommittedResponseWrapper.java:227) [spring-session-core-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.session.web.http.OnCommittedResponseWrapper.sendRedirect(OnCommittedResponseWrapper.java:127) [spring-session-core-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at javax.servlet.http.HttpServletResponseWrapper.sendRedirect(HttpServletResponseWrapper.java:138) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.security.web.firewall.FirewalledResponse.sendRedirect(FirewalledResponse.java:44) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServletResponseWrapper.sendRedirect(HttpServletResponseWrapper.java:138) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.security.web.util.OnCommittedResponseWrapper.sendRedirect(OnCommittedResponseWrapper.java:129) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServletResponseWrapper.sendRedirect(HttpServletResponseWrapper.java:138) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.security.web.util.OnCommittedResponseWrapper.sendRedirect(OnCommittedResponseWrapper.java:129) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.DefaultRedirectStrategy.sendRedirect(DefaultRedirectStrategy.java:57) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint.commence(LoginUrlAuthenticationEntryPoint.java:169) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.sendStartAuthentication(ExceptionTranslationFilter.java:213) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.handleSpringSecurityException(ExceptionTranslationFilter.java:185) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:141) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:147) [spring-session-core-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81) [spring-session-core-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) [spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: java.net.SocketException: Connection closed by remote host
+	at sun.security.ssl.SSLSocketImpl.checkWrite(SSLSocketImpl.java:1565) ~[na:1.8.0_181]
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:71) ~[na:1.8.0_181]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_181]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_181]
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3731) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	... 103 common frames omitted
+20-11-2018 16:29:25.792 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 3923 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 16:29:25.797 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 16:29:25.797 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 16:29:30.213 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 16:29:30.880 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 16:29:32.783 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 7.119 seconds (JVM running for 2971.892)
+20-11-2018 16:29:32.788 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - DataSource actual= HikariDataSource (HikariPool-4)
+20-11-2018 16:29:33.083 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - La password 'paswword' codificada es: $2a$10$PEk21n6pldMifoNmBWdfDOKWqSAa1wOMgJhTMun0jyROXhqieSM7q
+20-11-2018 16:29:33.274 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 0ms, rows: 1
+20-11-2018 16:29:43.052 [http-nio-8080-exec-10] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 2ms, rows: 1
+20-11-2018 16:29:49.296 [http-nio-8080-exec-7] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 4ms, rows: 1
+20-11-2018 16:29:55.145 [http-nio-8080-exec-3] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 6ms, rows: 1
+20-11-2018 16:29:56.273 [http-nio-8080-exec-1] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where ( generatedAlias0.username=:param0 ) or ( generatedAlias0.email=:param1 ), time: 5ms, rows: 1
+20-11-2018 16:31:29.530 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 3923 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 16:31:29.530 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 16:31:29.531 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 16:31:33.087 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 16:31:33.683 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 16:31:35.548 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 6.121 seconds (JVM running for 3094.658)
+20-11-2018 16:31:35.552 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - DataSource actual= HikariDataSource (HikariPool-5)
+20-11-2018 16:31:35.873 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - La password 'paswword' codificada es: $2a$10$cHQHPvDeFw42SJ./KYrz8u/qWbjABrZoPcGooq7zjXfcNej0uDxCy
+20-11-2018 16:31:36.053 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 0ms, rows: 1
+20-11-2018 16:31:37.905 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarting - Starting Ingweb3Application on m-lat with PID 3923 (/home/mariano/borrar/workspace-ingweb3-2018/ingweb3/target/classes started by mariano in /home/mariano/borrar/workspace-ingweb3-2018/ingweb3)
+20-11-2018 16:31:37.906 [restartedMain] DEBUG a.edu.iua.ingweb3.Ingweb3Application.logStarting - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+20-11-2018 16:31:37.906 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+20-11-2018 16:31:41.464 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator.initiateServiceInternal - Statistics initialized [enabled=true]
+20-11-2018 16:31:42.119 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-11-2018 16:31:43.688 [restartedMain] INFO  a.edu.iua.ingweb3.Ingweb3Application.logStarted - Started Ingweb3Application in 5.867 seconds (JVM running for 3102.798)
+20-11-2018 16:31:43.695 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - DataSource actual= HikariDataSource (HikariPool-6)
+20-11-2018 16:31:43.822 [restartedMain] DEBUG a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a0d5f98.run - La password 'paswword' codificada es: $2a$10$e4NcodeKBTgNkcaX6tBvC.d7IXUPdqiFn.Rpi7IgicPDCMxjqg2UW
+20-11-2018 16:31:43.989 [restartedMain] DEBUG o.h.s.i.ConcurrentStatisticsImpl.queryExecuted - HHH000117: HQL: SELECT nombre,length FROM archivo WHERE length>?, time: 1ms, rows: 1

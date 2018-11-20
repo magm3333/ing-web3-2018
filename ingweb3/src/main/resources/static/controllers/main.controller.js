@@ -25,7 +25,9 @@ angular.module('iw3').controller(
 				wsService.initStompClient('/iw3/graph', function(payload,
 						headers, res) {
 					//$log.log(payload);
-					$scope.procesaDatosGraph(payload.payload);
+					if(payload.type=='GRAPH_DATA') {
+						$scope.procesaDatosGraph(payload.payload);
+					}
 					$scope.$apply();
 				});
 			}
@@ -39,4 +41,5 @@ angular.module('iw3').controller(
 				 wsService.stopStompClient();
 			});
 
+			
 		});

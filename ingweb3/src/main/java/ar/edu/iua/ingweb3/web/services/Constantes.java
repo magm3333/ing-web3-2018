@@ -23,5 +23,7 @@ public final class Constantes {
 	
 	public static final String URL_GRAPH =  URL_BASE + "/graph";
 	
+	public static final String URL_REPORT =  URL_BASE + "/report";
+	
 	
 }
